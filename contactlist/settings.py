@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8ed02sth7ypw*8^%qhk$j*p3&jspu-a&(5$9vi^u9#avefac5l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['GestorContactos.onrender.com']
 
 
 # Application definition
@@ -122,6 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Carpeta donde se recopilan los archivos static para produccion
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'), #Para trabajar con archivos static
 ]
