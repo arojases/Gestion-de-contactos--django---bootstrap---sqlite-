@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8ed02sth7ypw*8^%qhk$j*p3&jspu-a&(5$9vi^u9#avefac5l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['gestioncontactos.onrender.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -125,9 +125,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Carpeta donde se recopilan los archivos static para produccion
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'), #Para trabajar con archivos static
-]
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, 'static'), #Para trabajar con archivos static
+#]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles') # Carpeta donde se guardan los archivos subidos
 MEDIA_URL = '/media/' # URL para acceder a los archivos subidos
